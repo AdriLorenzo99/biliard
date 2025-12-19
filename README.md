@@ -1,25 +1,68 @@
--Untuk dapat menjalankan aplikasi di lingkungan lokal, pengguna perlu mengikuti langkah-langkah instalasi berikut ini:
+# 🎱 Permainan Billiard (Python & Pygame)
 
--Prasyarat Sistem: Pastikan perangkat Anda telah terpasang Python versi 3.x. Anda dapat memverifikasi instalasi dengan menjalankan perintah python --version di terminal atau CMD.
--Kloning Repositori: Buka terminal atau git bash, lalu arahkan ke folder direktori tujuan Anda. Jalankan perintah berikut untuk mengunduh seluruh kode sumber dari repositori GitHub: git clone https://github.com/AdriLorenzo99/biliard.git
--Instalasi Dependensi: Masuk ke dalam direktori proyek yang baru dikloning dengan perintah cd biliard. Setelah itu, pasang library Pygame sebagai mesin penggerak utama permainan dengan perintah: pip install pygame
--Menjalankan Program: Setelah seluruh persiapan selesai, jalankan file utama program dengan perintah: python biliard_final.py
+Permainan **Billiard** ini dikembangkan menggunakan bahasa pemrograman **Python** dengan pustaka utama **Pygame**.  
+Aplikasi ini bersifat **cross-platform**, sehingga dapat dijalankan pada **Windows, macOS, dan Linux** selama Python telah terpasang dengan benar.
 
--Berikut adalah panduan kontrol yang tersedia:
+---
 
--Navigasi Menu Utama:
+## Teknologi yang Digunakan
+- Python (disarankan versi 3.8 ke atas)
+- Pygame
 
--Gunakan tombol PANAH ATAS/BAWAH pada keyboard untuk memilih mode permainan (1 Player, 2 Player, atau Exit Game).
--Tekan ENTER untuk mengonfirmasi pilihan Anda.
--Kontrol Inti Permainan:
--Membidik (Aiming): Gerakkan kursor Mouse di sekitar bola putih untuk menentukan arah pukulan. Garis bantu bidik (Guideline) akan secara otomatis memproyeksikan arah bola.
--Mengatur Kekuatan (Power): Klik dan tahan Klik Kiri Mouse, lalu tarik menjauh dari bola putih. Semakin jauh tarikan, semakin besar tenaga pukulan yang dihasilkan, yang ditunjukkan oleh indikator pada stik.
--Memukul (Shooting): Lepaskan Klik Kiri Mouse untuk mengeksekusi tembakan.
+---
 
--Fungsi Tambahan:
+## Panduan Instalasi, Menjalankan, dan Penggunaan Aplikasi
 
--Pause/Unpause: Tekan tombol ESC untuk membuka menu jeda atau melanjutkan permainan.
--Layar Penuh (Fullscreen): Tekan tombol 'F' pada keyboard untuk berganti antara mode jendela dan mode layar penuh.
--Ball-in-Hand: Jika terjadi pelanggaran, pemain lawan cukup melakukan Klik Kiri pada area meja yang diinginkan untuk menempatkan bola putih kembali.kan permainan.
-Layar Penuh (Fullscreen): Tekan tombol 'F' pada keyboard untuk berganti antara mode jendela dan mode layar penuh.
-Ball-in-Hand: Jika terjadi pelanggaran, pemain lawan cukup melakukan Klik Kiri pada area meja yang diinginkan untuk menempatkan bola putih kembali.
+Ikuti langkah-langkah berikut secara berurutan:
+
+1. Kloning repositori dari GitHub  
+   git clone https://github.com/AdriLorenzo99/biliard.git
+
+2. Masuk ke direktori proyek  
+   cd biliard
+
+3. Instal pustaka yang dibutuhkan  
+   pip install pygame
+
+4. Jalankan aplikasi  
+   python biliard_final.py
+
+Setelah dijalankan, aplikasi akan membuka jendela permainan berukuran **960 x 540 piksel**.  
+Jendela bersifat **resizable** dan akan menyesuaikan skala tampilan tanpa merusak rasio permainan.
+
+---
+
+## Panduan Penggunaan dan Kontrol
+
+### Menu Utama
+- Gunakan tombol **Panah Atas / Panah Bawah** pada keyboard untuk memilih mode permainan:
+  - 1 Player
+  - 2 Player
+  - Exit
+- Tekan **Enter** untuk mengonfirmasi pilihan mode permainan.
+
+---
+
+### Kontrol Dalam Permainan
+- **Membidik**  
+  Gerakkan **Mouse** untuk mengatur sudut bidikan stik biliar.  
+  Garis bantu (*Guideline*) akan membantu memproyeksikan arah pukulan.
+
+- **Kekuatan Pukulan**  
+  Klik dan tahan **Tombol Kiri Mouse**, tarik stik ke belakang untuk mengatur kekuatan pukulan, lalu lepaskan untuk memukul bola putih.
+
+- **Ball-in-Hand**  
+  Jika terjadi pelanggaran (*foul / scratch*), klik kiri pada area meja yang valid untuk menempatkan kembali bola putih.
+
+---
+
+### Kontrol Sistem
+- **Fullscreen** : Tekan tombol **F**
+- **Pause / Menu** : Tekan tombol **ESC**  
+  Akan muncul menu jeda (*Pause Menu*) yang berisi opsi:
+  - Restart
+  - Kembali ke Main Menu
+
+---
+## Catatan
+Pastikan seluruh dependensi telah terinstal dengan benar agar permainan dapat berjalan tanpa kendala.
