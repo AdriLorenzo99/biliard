@@ -51,7 +51,7 @@ BALL_COLORS = {
 
 # Inisialisasi Layar
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT), pygame.RESIZABLE)
-pygame.display.set_caption("Pro Billiard Master - Final Presentation")
+pygame.display.set_caption("Pro Billiard Master")
 canvas = pygame.Surface((GAME_WIDTH, GAME_HEIGHT))
 clock = pygame.time.Clock()
 
